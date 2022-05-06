@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="shortcut icon" href="lista-de-verificacion.ico" type="image/x-icon">
+</head>
+<body>
+  <div id="list">
+  <h1>Lista de Tareas</h1>
+  <form action="">
+  <label for="">Nombre: </label>
+  <input type="text" id="nombre" size="40px" placeholder="Escribe tu nombre">
+</form>
+  <button type="button" onclick="capturar()">Guardar</button><br>
+  <button type="button" onclick="mostrar()">Mostrar nombre</button><br>
+  <h2>Tareas de:</h2>
+        <h3 id="pNombre"></h3>
+  <hr>
+  <center>
+  <div class="introducir">
+			<form class="agregar">
+				<input type="text" class="tarea" id="tarea" size="100px" placeholder="Escribe una tarea"><br>
+				<button type="button" class="boton" id="boton" onclick="añadir()">Añadir</button>
+			</form>
+	</div>
+  </center>
+  <table id="tabla"></table>
+  </div>
+  <script src="myscript.js"></script>
+</body>
+</html>
